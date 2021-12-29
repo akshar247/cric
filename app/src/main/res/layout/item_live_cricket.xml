@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/layout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:layout_height="@dimen/_170sdp">
+
+    <RelativeLayout
+        android:id="@+id/card_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp">
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_5sdp">
+            <TextView
+                android:id="@+id/txt_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/com_facebook_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="MATCH - "
+                android:textSize="@dimen/_20sdp"/>
+            <TextView
+                android:id="@+id/txt_match_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/com_facebook_blue"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/txt_match"
+                android:gravity="center"
+                android:text="32"
+                android:textSize="@dimen/_20sdp"/>
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/txt_time_and_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_1"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="2021-09-23 19:30:00"
+            android:textSize="@dimen/_16sdp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/txt_time_and_date">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_flag_1"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/canada"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/country_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:text="INDIA"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/score_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"
+                        android:text="180/6"/>
+                    <TextView
+                        android:id="@+id/over_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(20 O)"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/score_1"
+                        android:textSize="@dimen/_17sdp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/vs"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/vs"
+                android:layout_gravity="center_vertical"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_flag_2"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/india"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/country_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:text="INDIA"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/score_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_17sdp"
+                        android:text="180/6"/>
+                    <TextView
+                        android:id="@+id/over_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(20 O)"
+                        android:textColor="@color/black"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/score_2"
+                        android:textSize="@dimen/_17sdp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+

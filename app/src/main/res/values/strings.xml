@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Live Cricket TV</string>
+
+    <string name="default_video_time" translatable="false">00:00</string>
+    <string name="default_video_combined_time" translatable="false">00:00/00:00</string>
+    <string name="time_am">AM</string>
+    <string name="time_pm">PM</string>
+    <string name="battery_percent">battery:%1$d%%</string>
+    <string name="volume_changing">volume:%1$d%%</string>
+    <string name="brightness_changing">brightness:%1$d%%</string>
+    <string name="player_error">player error:%1$d</string>
+
+
+    <string name="coming_son">Coming Soon</string>
+    <string name="noNetworkFound">You\'re not connected to the Internet. Please connect and retry. </string>
+    <string name="msg_NO_INTERNET_RESPOND">Please connect your internet connection</string>
+    <string name="msg_please_wait">Please wait …</string>
+    <string name="msg_server_error">Something went wrong please try again</string>
+    <string name="msg_press_back_twice">Double tab to back</string>
+    <string name="dialog_yes">YES</string>
+    <string name="dialog_no">NO</string>
+    <string name="dialog_ok">OK</string>
+    <string name="str_or">OR</string>
+    <string name="str_submit">Submit</string>
+    <string name="hi">Hi</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="recent_matches">Recent Matches</string>
+    <string name="trending_series">Trending series</string>
+    <string name="top_stories">Top Stories</string>
+    <string name="match_titel">Indian Premier League 2021- india vs englend top news </string>
+    <string name="matchs">Matches</string>
+
+    <string-array name="type_array">
+        <item>Team</item>
+        <item>All rounder</item>
+        <item>Batting</item>
+        <item>Bowling</item>
+    </string-array>
+</resources>

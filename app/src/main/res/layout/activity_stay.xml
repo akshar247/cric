@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:background="@drawable/ads_corner"
+        android:gravity="center"
+        android:text="Ad"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/_2sdp"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="This App is Closed Now"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_1"
+        android:layout_marginRight="10dp"
+        android:text="Install Our New App"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/green"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/new_app_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_2"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txt_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/new_app_image"
+        android:layout_marginRight="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_5"
+        android:layout_marginRight="10dp"
+        android:text="App link"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/app_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_3"
+        android:text="https://play.google.com/store/apps/details?id=com.beauty.beautycamera.selfiecamera.dripeffect.neoneffect.photoeditor"
+        android:textColor="#0645AD"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/app_link"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:weightSum="2"
+        >
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green">
+            <TextView
+                android:id="@+id/textdownload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Back"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

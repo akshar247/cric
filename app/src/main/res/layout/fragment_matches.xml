@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/loader"
+        android:background="@color/yellow"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/green1"
+        android:id="@+id/actionbar"
+        >
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:id="@+id/back"
+            android:tint="@color/complted"
+            android:layout_marginVertical="@dimen/_8sdp"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:src="@drawable/ic_back1"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:fontFamily="@font/quanticoregular"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Matches"
+            android:textSize="@dimen/_22sdp"
+            android:textColor="@color/complted"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_below="@+id/txt_matches"
+        app:tabGravity="fill"
+        android:background="#171717"
+        app:tabMode="fixed"
+        app:tabIndicator="@color/transparent"
+        app:tabTextAppearance="@style/TabItemTextAppearance"
+        app:tabBackground="@drawable/tab_selector"
+        app:tabTextColor="@color/white" />
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/codingblack"
+    android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/txt_matches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/matchs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp" />
+
+            <FrameLayout
+                android:id="@+id/MainContainer"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="match_parent">
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/MainContainer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

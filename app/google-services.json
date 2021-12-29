@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "526924804258",
+    "firebase_url": "https://live-cricker-tv---star-default-rtdb.firebaseio.com",
+    "project_id": "live-cricker-tv---star",
+    "storage_bucket": "live-cricker-tv---star.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526924804258:android:0f988dc5a0b2b76ecee7fb",
+        "android_client_info": {
+          "package_name": "com.livecrickettv.livet20.star.sports.live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526924804258-5lupu6u38oqu7ic66ckevd7an5qqlov6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaCh3Pr_TMG0zlgwmRzD--ItJaBIvL-uY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526924804258-5lupu6u38oqu7ic66ckevd7an5qqlov6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
